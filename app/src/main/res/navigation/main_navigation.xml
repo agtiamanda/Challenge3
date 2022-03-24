@@ -51,5 +51,9 @@
             android:name="jenis_pesawat"
             app:argType="string"
             android:defaultValue="Tidak ada" />
+        <argument
+            android:name="tidak_ketemu"
+            app:argType="string"
+            android:defaultValue="Tidak ada data" />
     </fragment>
 </navigation>
