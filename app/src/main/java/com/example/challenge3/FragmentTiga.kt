@@ -30,6 +30,7 @@ class FragmentTiga : Fragment() {
         val pesawat = args.jenis
         binding.jenisPesawat.text="Jenis Pesawat: $pesawat"
         binding.Hasil.setOnClickListener {
+
             val pindah = FragmentTigaDirections.actionFragmentTigaToFragmentEmpat()
             pindah.jenisPesawat = pesawat
             it.findNavController().navigate(pindah)
@@ -46,7 +47,6 @@ class FragmentTiga : Fragment() {
             binding.car.text = "kargo :$kargo"
             binding.result.text = "payload :$totalPayload"
         }
-
         }
 
 
