@@ -2,4 +2,8 @@
     <string name="app_name">Challenge3</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_berat_penumpang">total berat penumpang</string>
+    <string name="berat_kargo">berat kargo</string>
+    <string name="berat_bagasi">berat bagasi</string>
+    <string name="hasil_payload">hasil payload</string>
 </resources>
