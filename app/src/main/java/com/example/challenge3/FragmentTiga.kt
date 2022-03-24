@@ -41,7 +41,10 @@ class FragmentTiga : Fragment() {
         val bagasi = payload.beratBagasi
         val totalPayload = passanger + kargo + bagasi
         if(passanger > 0){
-            binding.info.text = "\npenumpang : $passanger \n bagasi : $bagasi\n kargo :$kargo \n\n payload : $totalPayload"
+            binding.numpang.text = "\npenumpang : $passanger"
+            binding.info.text = "bagasi: $bagasi"
+            binding.car.text = "kargo :$kargo"
+            binding.result.text = "payload :$totalPayload"
         }
 
         }
