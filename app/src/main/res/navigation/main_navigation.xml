@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.challenge3.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.example.challenge3.FragmentDua"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" >
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.example.challenge3.FragmentTiga"
+        android:label="fragment_tiga"
+        tools:layout="@layout/fragment_tiga" >
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentEmpat"
+            app:destination="@id/fragmentEmpat" />
+        <argument
+            android:name="parsel"
+            app:argType="com.example.challenge3.DataPenumpang" />
+        <argument
+            android:name="jenis"
+            app:argType="string"
+            android:defaultValue="tidak ada" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEmpat"
+        android:name="com.example.challenge3.FragmentEmpat"
+        android:label="fragment_empat"
+        tools:layout="@layout/fragment_empat" >
+        <action
+            android:id="@+id/action_fragmentEmpat_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+        <argument
+            android:name="jenis_pesawat"
+            app:argType="string"
+            android:defaultValue="Tidak ada" />
+    </fragment>
+</navigation>
