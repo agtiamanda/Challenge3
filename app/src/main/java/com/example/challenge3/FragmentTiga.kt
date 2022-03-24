@@ -1,13 +1,12 @@
 package com.example.challenge3
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.challenge3.databinding.FragmentDuaBinding
 import com.example.challenge3.databinding.FragmentTigaBinding
 
 
@@ -15,7 +14,7 @@ class FragmentTiga : Fragment() {
     private var _binding: FragmentTigaBinding? = null
     private val binding get() = _binding!!
 
-    val args: FragmentTigaArgs by navArgs()
+    private val args: FragmentTigaArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +34,7 @@ class FragmentTiga : Fragment() {
             pindah.jenisPesawat = pesawat
             it.findNavController().navigate(pindah)
         }
+        //nerima data fragment 4 ke 3
         val payload = args.parsel
         val passanger = payload.beratPenumpang
         val kargo = payload.beratKargo
