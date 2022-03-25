@@ -46,6 +46,8 @@ class FragmentTiga : Fragment() {
             binding.info.text = "bagasi: $bagasi"
             binding.car.text = "kargo :$kargo"
             binding.result.text = "payload :$totalPayload"
+            binding.plane.visibility = View.GONE
+
         }
         }
 
