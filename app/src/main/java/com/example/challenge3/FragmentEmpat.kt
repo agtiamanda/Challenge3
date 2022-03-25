@@ -29,7 +29,7 @@ class FragmentEmpat : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnPayload.setOnClickListener {
             if (binding.pertama.text.isNullOrEmpty()) {
-                Toast.makeText(requireContext(), "Kolom masih kosong", Toast.LENGTH_LONG)
+                Toast.makeText(requireContext(), "Kolom masih kosong", Toast.LENGTH_SHORT)
                     .show()
             } else {
 
